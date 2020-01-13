@@ -1,0 +1,25 @@
+<link href="/node_modules/cropperjs/dist/cropper.css" rel="stylesheet">
+<script src="/node_modules/cropperjs/dist/cropper.js"></script>
+<p>
+  Halo!
+</p>
+<input type='file' (change)="inputFileEn($event)">
+<input type='file' (change)="inputFileId($event)">
+<!-- <div>
+  <img id="image">
+</div> -->
+<div>
+  <img id="imageEn">
+</div>
+<!-- <div>
+  <img id="imageId" [src]="this.fileID">
+</div> -->
+<div id="previewEn">
+</div>
+<div id="previewId">
+</div>
+<div>
+  <img [src]="croppedFile">
+</div>
+<button (click)="show()">Click</button>
+<!-- <button (click)="show()">Show</button> -->

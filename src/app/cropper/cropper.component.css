@@ -1,0 +1,21 @@
+#imgEn {
+    display: block;
+    max-width: 100%;
+}
+
+#imgId {
+    display: block;
+    max-width: 100%;
+}
+
+#previewEn{
+    overflow: hidden;
+    width: 219px;
+    height: 310px;
+}
+
+#previewId{
+    overflow: hidden;
+    width: 219px;
+    height: 310px;
+}
