@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { CropperComponent } from './cropper/cropper.component';
+import { ModificationInputComponent } from './modification-input/modification-input.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    CropperComponent
+    CropperComponent,
+    ModificationInputComponent
   ],
   imports: [
     BrowserModule,
