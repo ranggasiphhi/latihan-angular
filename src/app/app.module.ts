@@ -9,7 +9,6 @@ import { ModificationInputComponent } from './modification-input/modification-in
 import { FormTestingComponent } from './form-testing/form-testing.component';
 
 import { FormsModule, ReactiveFormsModule} from'@angular/forms';
-// import { CobangxsComponent } from './cobangxs/cobangxs.component';
 
 import { NgxsModule } from '@ngxs/store';
 import { CreateComponent } from './cobangxs/create/create.component';
@@ -23,14 +22,13 @@ import { CreateComponent } from './cobangxs/create/create.component';
     ModificationInputComponent,
     FormTestingComponent,
     CreateComponent,
-    // CobangxsComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
     AppRoutingModule,
-    [NgxsModule.forRoot()]
+    // [NgxsModule.forRoot([CreateComponent])]
   ],
   providers: [],
   bootstrap: [AppComponent]
