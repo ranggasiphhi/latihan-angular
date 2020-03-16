@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators} from '@angular/forms';
+import { Select, Store } from '@ngxs/store';
+import {} from '../action'
 
 @Component({
   selector: 'app-create',
@@ -10,7 +12,9 @@ export class CreateComponent implements OnInit {
 
   angForm: FormGroup;
 
-  constructor(private fb: FormBuilder) {
+  constructor(private fb: FormBuilder,
+              private store: Store) {
+
     this.createForm();
    }
 
@@ -26,6 +30,7 @@ export class CreateComponent implements OnInit {
    }
 
   ngOnInit() {
+    this.store.dispatch(new )
   }
 
 }

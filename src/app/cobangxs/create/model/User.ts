@@ -1,4 +1,6 @@
 export interface User {
-    name: string;
-    email: string;
+    userId: number;
+    id : number;
+    title: string;
+    completed: boolean
 }

@@ -1,5 +1,6 @@
 import { Component, OnInit, Directive } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { $ } from 'protractor';
 
 @Component({
   selector: 'app-form-testing',
@@ -20,6 +21,7 @@ export class FormTestingComponent implements OnInit {
 
   constructor() {
     this.createForm();
+    $('select').selectpicker();
    }
 
    createForm(): void {
